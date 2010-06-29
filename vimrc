@@ -1,3 +1,9 @@
+" disable vim compatibility to enable features
+set nocompatible
+
+" enable syntax highlight
+syntax on
+
 " show line numbers
 set number
 
