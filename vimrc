@@ -14,3 +14,10 @@ set number
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" don't wrap lines
+set nowrap
+
+" set filetype for god and bluepill scripts
+au BufRead,BufNewFile *.god,*.pill set filetype=ruby
+
