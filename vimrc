@@ -18,6 +18,9 @@ set expandtab
 " don't wrap lines
 set nowrap
 
+" show line/column positions
+set ruler
+
 " set filetype for god and bluepill scripts
 au BufRead,BufNewFile *.god,*.pill set filetype=ruby
 
