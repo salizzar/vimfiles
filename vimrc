@@ -22,5 +22,5 @@ set nowrap
 set ruler
 
 " set filetype for god and bluepill scripts
-au BufRead,BufNewFile *.god,*.pill set filetype=ruby
+au BufRead,BufNewFile *.god,*.pill,*.ru set filetype=ruby
 
