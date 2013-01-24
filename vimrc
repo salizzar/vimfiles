@@ -1,6 +1,9 @@
 " disable vim compatibility to enable features
 set nocompatible
 
+" enable case insensitive file completion
+set wildignorecase
+
 " enable syntax highlight
 syntax on
 
@@ -24,3 +27,7 @@ set ruler
 " set filetype for god and bluepill scripts
 au BufRead,BufNewFile *.god,*.pill,*.ru set filetype=ruby
 
+"
+" macros
+"
+" let @h="aeea<Del><Del>:<Esc>bb<Del>"
