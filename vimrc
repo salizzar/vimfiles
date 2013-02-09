@@ -2,7 +2,9 @@
 set nocompatible
 
 " enable case insensitive file completion
-set wildignorecase
+if exists("&wildcardignore")
+  set wildignorecase
+endif
 
 " enable syntax highlight
 syntax on
