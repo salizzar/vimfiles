@@ -27,9 +27,14 @@ set nowrap
 set ruler
 
 " set filetype for god and bluepill scripts
-au BufRead,BufNewFile *.god,*.pill,*.ru set filetype=ruby
+au BufRead,BufNewFile *.god,*.pill,*.ru,Vagrantfile set filetype=ruby
 
 "
 " macros
 "
 " let @h="aeea<Del><Del>:<Esc>bb<Del>"
+
+
+" remove unnecessary spaces
+autocmd BufWritePre * :%s/\s\+$//e
+
