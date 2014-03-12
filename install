@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#
+# Installer
+#
+
+ln -sf ~/.vim/vimrc ~/.vimrc
+
+echo 'Done.'
+
