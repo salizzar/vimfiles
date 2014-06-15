@@ -4,7 +4,14 @@
 # Installer
 #
 
+echo 'Setting vimrc...'
 ln -sf ~/.vim/vimrc ~/.vimrc
+
+echo 'Cloning vundle...'
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+echo 'Installing vim plugins...'
+vim +PluginInstall +qall
 
 echo 'Done.'
 

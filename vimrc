@@ -1,24 +1,15 @@
-" disable vim compatibility to enable features
-set nocompatible
+" ******************************************
+" custom configs
+" ******************************************
 
-" enable case insensitive file completion
-if exists("&wildcardignore")
-  set wildignorecase
-endif
+" remove unnecessary spaces
+autocmd BufWritePre * :%s/\s\+$//e
 
 " enable syntax highlight
 syntax on
 
-" enable syntax by filetype
-filetype on
-
 " show line numbers
 set number
-
-" set tabsize, deslocation and replace tabs with spaces
-set tabstop=2
-set shiftwidth=2
-set expandtab
 
 " don't wrap lines
 set nowrap
@@ -26,15 +17,50 @@ set nowrap
 " show line/column positions
 set ruler
 
-" set filetype for god and bluepill scripts
-au BufRead,BufNewFile *.god,*.pill,*.ru,Vagrantfile set filetype=ruby
 
-"
-" macros
-"
-" let @h="aeea<Del><Del>:<Esc>bb<Del>"
+" ******************************************
+" vundler
+" ******************************************
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
 
-" remove unnecessary spaces
-autocmd BufWritePre * :%s/\s\+$//e
+" ******************************************
+" vim plugins
+" ******************************************
+
+" plugin from http://vim-scripts.org/vim/scripts.html
+Plugin 'L9'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/IndexedSearch'
+
+
+" ******************************************
+" ruby plugins
+" ******************************************
+
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-haml'
+
+
+" ******************************************
+" devops plugins
+" ******************************************
+
+Plugin 'evanmiller/nginx-vim-syntax'
+Plugin 'tmatilai/vim-monit'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
