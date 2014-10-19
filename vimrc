@@ -61,7 +61,7 @@ Plugin 'tpope/vim-haml'
 " golang plugins
 " ******************************************
 
-Plugin 'jnwhiteh/vim-golang'
+Plugin 'fatih/vim-go'
 
 
 " ******************************************
