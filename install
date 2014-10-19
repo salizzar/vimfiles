@@ -4,6 +4,9 @@
 # Installer
 #
 
+echo 'Removing old bundles...'
+rm -rf ~/.vim/bundle
+
 echo 'Setting vimrc...'
 ln -sf ~/.vim/vimrc ~/.vimrc
 
