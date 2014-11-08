@@ -18,9 +18,10 @@ set nowrap
 set ruler
 
 " custom configs based on filetype
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype ruby 	setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype html 	setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype yaml 	setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype tf	setlocal ts=4 sts=4 sw=4 expandtab
 
 
 " ******************************************
@@ -39,7 +40,7 @@ Plugin 'gmarik/Vundle.vim'
 
 
 " ******************************************
-" vim plugins
+" vim
 " ******************************************
 
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -49,7 +50,7 @@ Plugin 'vim-scripts/IndexedSearch'
 
 
 " ******************************************
-" ruby plugins
+" ruby
 " ******************************************
 
 Plugin 'tpope/vim-bundler'
@@ -58,35 +59,49 @@ Plugin 'tpope/vim-haml'
 
 
 " ******************************************
-" golang plugins
+" golang
 " ******************************************
 
 Plugin 'fatih/vim-go'
 
 
 " ******************************************
-" erlang plugins
+" erlang
 " ******************************************
 
 Plugin 'jimenezrick/vimerl'
 
 
 " ******************************************
-" vagrant plugins
+" vagrant
 " ******************************************
 
 Plugin 'vim-scripts/vim-vagrant'
 
 
 " ******************************************
-" docker plugins
+" docker
 " ******************************************
 
 Plugin 'ekalinin/Dockerfile.vim'
 
 
 " ******************************************
-" devops plugins
+" terraform
+" ******************************************
+
+Plugin 'L2G/vim-syntax-terraform'
+
+
+" ******************************************
+" json
+" ******************************************
+
+Plugin 'elzr/vim-json'
+
+
+" ******************************************
+" devopes
 " ******************************************
 
 Plugin 'evanmiller/nginx-vim-syntax'
