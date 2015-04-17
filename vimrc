@@ -107,6 +107,7 @@ Plugin 'elzr/vim-json'
 
 Plugin 'evanmiller/nginx-vim-syntax'
 Plugin 'tmatilai/vim-monit'
+Bundle 'lepture/vim-jinja'
 
 
 " All of your Plugins must be added before the following line
