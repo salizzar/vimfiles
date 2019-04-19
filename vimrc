@@ -23,11 +23,15 @@ autocmd Filetype python     setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype html       setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype yaml       setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype yml        setlocal ts=2 sts=2 sw=2 expandtab filetype=yaml
 autocmd Filetype json       setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype tf         setlocal ts=4 sts=4 sw=4 expandtab
 
 " jsx
-let g:jsx_ext_required = 0
+let g:jsx_ext_required=0
+
+" terraform
+" let g:terraform_fmt_on_save=1
+let g:terraform_align=1
 
 
 " ******************************************
@@ -53,6 +57,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'L9'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/IndexedSearch'
+Plugin 'cespare/vim-toml'
 
 
 " ******************************************
@@ -96,7 +101,7 @@ Plugin 'ekalinin/Dockerfile.vim'
 " terraform
 " ******************************************
 
-Plugin 'L2G/vim-syntax-terraform'
+Plugin 'hashivim/vim-terraform.git'
 
 
 " ******************************************
@@ -117,12 +122,26 @@ Plugin 'mxw/vim-jsx'
 " devopes
 " ******************************************
 
-Plugin 'evanmiller/nginx-vim-syntax'
+Plugin 'nginx.vim'
 Plugin 'tmatilai/vim-monit'
+Plugin 'yoppi/fluentd.vim'
 Bundle 'lepture/vim-jinja'
+
+
+" ******************************************
+" clojure
+" ******************************************
+Plugin 'VimClojure'
+
+
+" ******************************************
+" third-party utilities
+" ******************************************
+Plugin 'zerowidth/vim-copy-as-rtf'
 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+let g:go_version_warning = 0
