@@ -23,14 +23,17 @@ autocmd Filetype python     setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype html       setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype yaml       setlocal ts=2 sts=2 sw=2 expandtab
-autocmd Filetype yml        setlocal ts=2 sts=2 sw=2 expandtab filetype=yaml
+autocmd Filetype yml        setlocal filetype=yaml
 autocmd Filetype json       setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype typescript setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype terraform  setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype tfvars     setlocal filetype=terraform
 
 " jsx
 let g:jsx_ext_required=0
 
 " terraform
-" let g:terraform_fmt_on_save=1
+let g:terraform_fmt_on_save=1
 let g:terraform_align=1
 
 
@@ -116,7 +119,7 @@ Plugin 'elzr/vim-json'
 
 Plugin 'maksimr/vim-jsbeautify'
 Plugin 'mxw/vim-jsx'
-
+Plugin 'leafgarland/typescript-vim'
 
 " ******************************************
 " devopes
