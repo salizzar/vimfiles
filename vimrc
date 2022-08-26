@@ -138,6 +138,12 @@ Plugin 'VimClojure'
 
 
 " ******************************************
+" eiffell
+" ******************************************
+"
+Plugin 'eiffelhub/vim-eiffel'
+
+" ******************************************
 " third-party utilities
 " ******************************************
 Plugin 'zerowidth/vim-copy-as-rtf'
