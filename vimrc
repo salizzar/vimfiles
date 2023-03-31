@@ -157,6 +157,14 @@ Plugin 'eiffelhub/vim-eiffel'
 
 Plugin 'vim-scripts/syntaxalgol68.vim'
 
+
+" ******************************************
+" C#
+" ******************************************
+
+Plugin 'OrangeT/vim-csharp'
+
+
 " ******************************************
 " third-party utilities
 " ******************************************
